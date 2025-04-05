@@ -12,8 +12,24 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description:
-    "Im sofia and this is my portfolio.",
+  description: "I'm Sofia and this is my portfolio.",
+  // Open Graph metadata for social media
+  openGraph: {
+    images: [
+      {
+        url: "/image/meta.jpeg",  // The path to your image
+        alt: "Meta Image for My Portfolio", // Optional description for the image
+      },
+    ],
+  },
+  // Twitter Card metadata for Twitter
+  twitter: {
+    card: "summary_large_image",
+    site: "@yourtwitterhandle", // Replace with your Twitter handle
+    title: "My Portfolio",
+    description: " Hey there 👋 Welcome to my Portfolio! Am Sofia.",
+    images: ["/image/meta.jpeg"], // Path to your image
+  },
 };
 
 export default function RootLayout({
@@ -26,10 +42,12 @@ export default function RootLayout({
       <head>
         <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
+          data-site="https://sofia-wanjiku.vercel.app/"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta property="og:image" content="/image/meta.png" />
+        <meta name="twitter:image" content="/image/meta.png" />
       </head>
       <body className={roboto.className}>
         <Layout>
