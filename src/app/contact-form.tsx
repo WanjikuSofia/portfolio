@@ -31,7 +31,7 @@ export function ContactForm() {
                 variant="lead"
                 className="mx-auto mb-8 text-base !text-gray-500"
               >
-                Fill up the form and our I will get back to you within 24
+                Fill up the form and I will get back to you within 24
                 hours.
               </Typography>
               <div className="flex gap-5">
@@ -43,7 +43,7 @@ export function ContactForm() {
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white" className="mb-2">
-                  wanjikusophia858@dmail.com
+                  wanjikusophia858@gmail.com
                 </Typography>
               </div>
               <div className="flex mb-10 gap-5">

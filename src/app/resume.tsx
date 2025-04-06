@@ -27,39 +27,33 @@ const RESUME_ITEMS = [
 export function Resume() {
   return (
     <section id="resume" className="px-8 py-24 bg-[#FBEBE2]">
-      <div className="container mx-auto grid w-full grid-cols-1 items-center gap-16 lg:grid-cols-2">
-        <div className="col-span-1">
+      <div className="container mx-auto w-full flex flex-col items-center text-center lg:text-left gap-16 lg:grid lg:grid-cols-2 lg:items-start">
+        {/* Text Content */}
+        <div className="w-full flex flex-col items-center lg:items-start">
           <Typography variant="h2" color="blue-gray">
             My Resume
           </Typography>
-          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-          I’m a passionate ICT student with a strong interest in technology and software development.
-         Ive worked on several personal projects, including web development, where
-          I have honed my skills in coding, problem-solving, and creating user-friendly solutions.
-           Always eager to learn and grow in the tech field.
-            
-       </Typography>
-          <Button
-  variant="text"
-  color="gray"
-  className="flex items-center gap-2"
->
-  <a
-    href="https://ke.linkedin.com/in/wanjiku-sofia-b87852345"  // Replace with your LinkedIn URL
-    target="_blank"  // Open in a new tab
-    rel="noopener noreferrer"  // Security measure for opening in a new tab
-    className="flex items-center gap-2"
-  >
-    Download Cv
-    <ArrowRightIcon
-      strokeWidth={3}
-      className="h-3.5 w-3.5 text-gray-900"
-    />
-  </a>
-</Button>
-
+          <Typography className="mb-4 mt-3 w-full sm:w-10/12 font-normal !text-gray-500">
+            I’m a passionate ICT student with a strong interest in technology and software development.
+            I’ve worked on several personal projects, including web development, where
+            I have honed my skills in coding, problem-solving, and creating user-friendly solutions.
+            Always eager to learn and grow in the tech field.
+          </Typography>
+          <Button variant="text" color="gray" className="flex items-center gap-2">
+            <a
+              href="https://ke.linkedin.com/in/wanjiku-sofia-b87852345"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              Download CV
+              <ArrowRightIcon strokeWidth={3} className="h-3.5 w-3.5 text-gray-900" />
+            </a>
+          </Button>
         </div>
-        <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
+
+        {/* Resume Items */}
+        <div className="w-full flex flex-col items-center lg:items-start gap-y-6 lg:ml-auto lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (
             <ResumeItem key={idx} {...props} />
           ))}
