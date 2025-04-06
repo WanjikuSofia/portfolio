@@ -1,5 +1,5 @@
 
-# 🌟 Sofia's Developer Portfolio
+# 🌟 Sofia's  Portfolio
 
 Welcome to my personal developer portfolio!  
 Built using **Next.js**, **TypeScript**, **TailwindCSS**, and **Material Tailwind UI**, this project showcases my skills, experience, and the projects I’ve worked on in a clean and modern design.
