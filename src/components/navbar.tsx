@@ -77,7 +77,7 @@ export function Navbar() {
 
         {/* Desktop Right Side */}
         <a
-          href="mailto:wanjikusofia858@gmail.com"
+          href="mailto:wanjikusophia858@gmail.com"
           className="hidden lg:flex items-center gap-4"
         >
           <div className="relative">
@@ -94,7 +94,7 @@ export function Navbar() {
             />
             <div className="flex flex-col leading-tight text-sm">
               <span className="font-semibold text-gray-900">sofia wanjiku</span>
-              <span className="text-xs text-gray-600">wanjikusofia858@gmail.com</span>
+              <span className="text-xs text-gray-600">wanjikusophia858@gmail.com</span>
             </div>
             <ChevronDownIcon className="h-4 w-4 text-gray-500 ml-1" />
           </div>
@@ -128,7 +128,7 @@ export function Navbar() {
 
           {/* Mobile Profile Section */}
           <a
-            href="mailto:wanjikusofia858@gmail.com"
+            href="mailto:wanjikusophia858@gmail.com"
             className="flex items-center gap-3 px-3 py-3 rounded-xl bg-gray-100 hover:bg-gray-200 cursor-pointer shadow-sm transition"
           >
             <Avatar
@@ -139,7 +139,7 @@ export function Navbar() {
             />
             <div className="flex flex-col leading-tight text-sm">
               <span className="font-semibold text-gray-900">sofia wanjiku</span>
-              <span className="text-xs text-gray-600">wanjikusofia858@gmail.com</span>
+              <span className="text-xs text-gray-600">wanjikusophia858@gmail.com</span>
             </div>
             <ChevronDownIcon className="h-4 w-4 text-gray-500 ml-auto" />
           </a>
